@@ -14,13 +14,17 @@
     </dependency>
     
 	<!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
-	<dependency>
+    <dependency>
 	    <groupId>com.epam.healenium</groupId>
 	    <artifactId>healenium-web</artifactId>
 	    <version>3.5.4</version>
 	</dependency>    
   </dependencies>
-	
+	<configuration>
+                    <includes>
+                        <include>**/**/HeleniumDemo.java</include>
+                    </includes>
+	</configuration>
   <properties>
    <maven.compiler.source>16</maven.compiler.source>
    <maven.compiler.target>16</maven.compiler.target>
